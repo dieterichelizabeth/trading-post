@@ -32,5 +32,6 @@ THEN I am able to successfully create, update, and delete data in my database
 
 ## Documentation
 
-[Attribute Validators (Sequelize) Documentation](https://sequelize.org/v5/manual/models-definition.html#per-attribute-validators-and--code-allownull--code-)
 [Sequelize Models Definitions Documentation](https://sequelize.org/v5/manual/models-definition.html)
+[Attribute Validators (Sequelize) Documentation](https://sequelize.org/v5/manual/models-definition.html#per-attribute-validators-and--code-allownull--code-)
+[belongsToMany relationships (Sequelize) Documentation](https://sequelize.org/master/manual/assocs.html#-code-foo-belongstomany-bar----through--baz-----code-)
