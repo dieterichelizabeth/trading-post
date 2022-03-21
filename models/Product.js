@@ -21,14 +21,17 @@ Product.init(
       allowNull: false,
     },
     price: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DECIMAL,
       allowNull: false,
+      // NEED Validates that the value is a decimal
     },
     stock: {
       type: DataTypes.INTEGER,
       allowNull: false,
+      // NEED Set a default value of 10
+      // NEED Validates that the value is numeric
     },
-    // Store a reference of the `id` of the `Category` that product belongs to
+    // Store a reference of category model's id
     category_id: {
       type: DataTypes.INTEGER,
       references: {

@@ -13,7 +13,7 @@ ProductTag.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    // Store a reference of the `id` of the `Product` which the tag belongs to
+    // Store a reference of the product model's id
     product_id: {
       type: DataTypes.INTEGER,
       references: {
@@ -21,9 +21,13 @@ ProductTag.init(
         key: "id",
       },
     },
+    // Store a reference of the tag model's id
     tag_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      references: {
+        model: "tag",
+        key: "id",
+      },
     },
   },
   {

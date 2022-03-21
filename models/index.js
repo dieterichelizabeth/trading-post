@@ -10,7 +10,7 @@ Product.belongsTo(Category, {
   onDelete: "CASCADE",
 });
 
-// Categories have many Products
+// Categories have many Products - category can have multiple products but a product can only belong to one category.
 Category.hasMany(Product, {
   foreignKey: "category_id", //?
   onDelete: "CASCADE",
