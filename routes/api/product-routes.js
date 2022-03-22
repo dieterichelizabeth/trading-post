@@ -2,16 +2,19 @@ const router = require("express").Router();
 const { Product, Category, Tag, ProductTag } = require("../../models");
 
 // The `/api/products` endpoint
-// Cannot get assoicated Category data
 
 // get all products
 router.get("/", (req, res) => {
   // find all products including its associated Category and Tag data
   Product.findAll({
-    include: {
-      model: Category,
-      model: Tag,
-    },
+    include: [
+      {
+        model: Category,
+      },
+      {
+        model: Tag,
+      },
+    ],
   })
     .then((dbProductdata) => res.json(dbProductdata))
     .catch((err) => {
@@ -24,10 +27,14 @@ router.get("/", (req, res) => {
 router.get("/:id", (req, res) => {
   // find a single product by its `id` including its associated Category and Tag data
   Product.findOne({
-    include: {
-      model: Category,
-      model: Tag,
-    },
+    include: [
+      {
+        model: Category,
+      },
+      {
+        model: Tag,
+      },
+    ],
     where: {
       id: req.params.id,
     },
