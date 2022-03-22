@@ -38,7 +38,7 @@ router.post("/", (req, res) => {
   // create a new category
   // expects {category_name: STRING}
   Category.create({
-    category_name: req.body.username,
+    category_name: req.body.category_name,
   })
     .then((dbCategoryData) => res.json(dbCategoryData))
     .catch((err) => {
