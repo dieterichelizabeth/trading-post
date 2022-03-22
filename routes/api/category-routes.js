@@ -8,7 +8,6 @@ router.get("/", (req, res) => {
   Category.findAll({
     include: {
       model: Product,
-      as: "product",
     },
   })
     .then((dbCategoryData) => res.json(dbCategoryData))
@@ -23,7 +22,6 @@ router.get("/:id", (req, res) => {
   Category.findOne({
     include: {
       model: Product,
-      as: "product",
     },
     where: {
       id: req.params.id,
