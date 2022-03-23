@@ -16,7 +16,7 @@ For this challenge, we were provided a functional Express.js API. Our job was to
 
 When the user starts the server, and the Sequelize models are synced to the MySQL database, the user can perform API GET, POST, PUT, and DELETE routes in Insomnia for categories, products, or tags, the data for each of these routes is displayed in a formatted JSON. Users are able to successfully create, update, and delete data in the Ecomerce Database (ecommerce_db).
 
-[Click to view Walkthrough Video](https://drive.google.com/file/d/1Pjj1g-7rd-aFZJs74tHenJw5iOjHELoc/view)
+[Click to view Walkthrough Video](https://drive.google.com/file/d/1SRutGehUJppRpqErkV0tVWyVBW2eAMnU/view)
 
 ## Usage/Example
 
