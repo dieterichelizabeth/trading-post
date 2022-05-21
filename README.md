@@ -1,20 +1,12 @@
 # trading-post
 
-Challenge 13 Object Relational Mapping (ORM): E-commerce Back End 🐂🤠💼
+Object Relational Mapping (ORM): E-commerce Back End 🐂🤠💼
 
-Internet retail, also known as e-commerce, is the largest sector of the electronics industry, having generated an estimated US$29 trillion in 2017 (Source: United Nations Conference on Trade and Development). E-commerce platforms like Shopify and WooCommerce provide a suite of services to businesses of all sizes. Due to the prevalence of these platforms, developers should understand the fundamental architecture of e-commerce sites.
+Trading post includes the back end for an e-commerce site- by using a working Express.js API and configuring it to use Sequelize to interact with a MySQL database.
 
-Our challenge is to build the back end for an e-commerce site- take a working Express.js API and configuring it to use Sequelize to interact with a MySQL database. Based on the User Story:
+For this project, a functional Express.js API was used to build Sequelize models of the Categories, Products, Product Tags, and Tags. Additionally, Trading Post adds CRUD routes for Category and Tags, and a delete route for Products.
 
-```md
-AS A manager at an internet retail company
-I WANT a back end for my e-commerce website that uses the latest technologies
-SO THAT my company can compete with other e-commerce companies
-```
-
-For this challenge, we were provided a functional Express.js API. Our job was to define the columns in the models folder for Category.js, Product.js, ProductTag.js, and Tag.js. Then, we wrote the get, post, put, and delete routes for category-routes.js and tag-routes.js. Lastly, we wrote get and delete routes for product-routes.js.
-
-When the user starts the server, and the Sequelize models are synced to the MySQL database, the user can perform API GET, POST, PUT, and DELETE routes in Insomnia for categories, products, or tags, the data for each of these routes is displayed in a formatted JSON. Users are able to successfully create, update, and delete data in the Ecomerce Database (ecommerce_db).
+Built with- Sequelize, Express.js, MySQL2, and Dotenv.
 
 [Click to view Walkthrough Video](https://drive.google.com/file/d/1SRutGehUJppRpqErkV0tVWyVBW2eAMnU/view)
 
@@ -56,6 +48,33 @@ Invoke the application by running-
 
 ```bash
 npm start
+```
+
+# User Story and Criteria
+
+This project was developed based on the User Story:
+
+```md
+AS A manager at an internet retail company
+I WANT a back end for my e-commerce website that uses the latest technologies
+SO THAT my company can compete with other e-commerce companies
+```
+
+and Criteria:
+
+```
+GIVEN a functional Express.js API
+WHEN I add my database name, MySQL username, and MySQL password to an environment variable file
+THEN I am able to connect to a database using Sequelize
+WHEN I enter schema and seed commands
+THEN a development database is created and is seeded with test data
+WHEN I enter the command to invoke the application
+THEN my server is started and the Sequelize models are synced to the MySQL database
+WHEN I open API GET routes in Insomnia for categories, products, or tags
+THEN the data for each of these routes is displayed in a formatted JSON
+WHEN I test API POST, PUT, and DELETE routes in Insomnia
+THEN I am able to successfully create, update, and delete data in my database
+
 ```
 
 ## Documentation
